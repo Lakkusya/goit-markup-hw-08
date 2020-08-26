@@ -1,0 +1,71 @@
+/* Наша команда */
+.subtitle {
+  display: block;
+}
+.member {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primary-title-color;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primary-text-color;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team {
+  .list {
+    width: 100%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    background: $primary-white-color;
+  }
+}
+.team-main {
+  background: #f5f4fa;
+  padding-bottom: 94px;
+}
+.team .list:not(:last-child) {
+  margin-right: 30px;
+}
+.social-logo {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+.social-logo .social-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join-list-item:hover .social-icon {
+  fill: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    .list {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+}

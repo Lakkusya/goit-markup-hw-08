@@ -1,0 +1,46 @@
+/* Чем мы занимаемся */
+@media screen and (max-width: 1199px) {
+  .description {
+    display: none;
+  }
+  .subtitle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    display: flex;
+  }
+  .description .link {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 94px;
+  }
+  .description .link:nth-child(3n) {
+    margin-right: 0;
+  }
+  .description .link .text {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $primary-white-color;
+    background: rgba(47, 48, 58, 0.8);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .product {
+    position: relative;
+  }
+}

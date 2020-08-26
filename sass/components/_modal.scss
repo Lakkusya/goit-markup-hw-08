@@ -1,0 +1,219 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.contact-form-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+.contact-form {
+  padding: 40px;
+}
+.contact-form-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-text-color;
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+}
+
+.user-agree {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.contract {
+  color: $accent-color;
+}
+.contact-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 20px;
+}
+x :focus {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+
+.btn-submit {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  border: none;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 19px;
+}
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: #ffffff;
+  background-size: contain;
+  outline: none;
+}
+.modal-icon-close:hover,
+.modal-icon-close:focus {
+  fill: $accent-color;
+}
+.modal-form-wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 28px;
+}
+.contact-form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-text-color;
+  transition: all 250ms linear;
+}
+.contact-form-input:focus + .contact-form-label,
+.contact-form-input:not(:placeholder-shown) + .contact-form-label {
+  transform: translateY(-40px) translateX(-16px);
+  color: $accent-color;
+  font-size: 12px;
+}
+.contact-form-input:focus + .contact-form-label + .modal-icon,
+.contact-form-input:not(:placeholder-shown)
+  + .contact-form-label
+  + .modal-icon {
+  fill: $accent-color;
+}
+.agree-text {
+  margin-left: 22px;
+}
+.user-agree {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin: 0;
+  cursor: pointer;
+}
+.user-agree input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.modal-form-agree {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: flex-end;
+  border: 1px solid $primary-title-color;
+}
+.checkbox-custom-icon {
+  fill: $primary-white-color;
+}
+.user-agree:hover input ~ .modal-form-agree {
+  background-color: $primary-white-color;
+}
+.user-agree input:checked ~ .modal-form-agree {
+  background-color: $accent-color;
+  fill: $primary-white-color;
+  opacity: 1;
+  border: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
