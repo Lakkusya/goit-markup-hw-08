@@ -1,4 +1,9 @@
 /* О НАС */
+.mobile-tablet {
+  display: none;
+  opacity: 0;
+}
+
 .headline,
 .text,
 .description .link {
@@ -17,8 +22,8 @@
   color: $primary-text-color;
 }
 .aboutus {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .headline {
@@ -51,12 +56,21 @@
   background-image: url(../Images/Icons/astronaut.svg);
 }
 @media screen and (min-width: 768px) {
+  .mobile-tablet {
+    opacity: 0;
+  }
   .aboutus {
     display: flex;
+    flex-wrap: wrap;
   }
   .list-item {
     width: calc((100% - 30px) / 2);
+  }
+  .list-item:not(:nth-child(2n)) {
     margin-right: 30px;
+  }
+  .list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -65,8 +79,12 @@
   }
   .list-item {
     width: calc((100% - 90px) / 4);
-    :not(:last-child) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
+  }
+  .mobile-tablet {
+    display: flex;
+    opacity: 1;
   }
 }

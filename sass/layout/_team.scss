@@ -38,14 +38,17 @@
   }
 }
 .team-main {
+  padding-bottom: 60px;
+}
+.team-container {
   background: #f5f4fa;
-  padding-bottom: 94px;
 }
 .team .list:not(:last-child) {
   margin-right: 30px;
 }
 .social-logo {
   display: flex;
+  justify-content: center;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
@@ -60,6 +63,16 @@
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
+    flex-wrap: wrap;
+    .list {
+      width: calc((100% - 30px) / 2);
+    }
+    .list:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    .list:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -67,5 +80,11 @@
     .list {
       width: calc((100% - 90px) / 4);
     }
+  }
+  .team .list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-main {
+    padding-bottom: 94px;
   }
 }
