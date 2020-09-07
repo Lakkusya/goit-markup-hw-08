@@ -18,48 +18,57 @@
   </head>
 
   <body>
-  <header class="header">
-    <div class="main-nav container">
-      <div class="main-list">
-        <nav class="nav-menu">
-          <a class="logo" href="./index.html" aria-label="Логотип">
-            <img src="./Images/Logo/WebStudio.png" alt="Логотип" />
-          </a>
-          <ul class="nav-list">
-            <li class="item">
-              <a class="link" href="index.html">Студия</a>
-            </li>
-            <li class="item">
-              <a class="link current" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="item">
-              <a class="link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo" href="./index.html" aria-label="Логотип">
+          <img src="./Images/Logo/WebStudio.png" alt="Логотип" />
+        </a>
+        <button class="menu-burger" type="button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+          <svg " width=" 24" height="16">
+            <use class="icon-burger" href="./Images/sprite.svg#icon-navigation"></use>
+            <use class="icon-burger-close" href="./Images/sprite.svg#icon-menu_close"></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper" data-menu>
+          <div class="main-list">
+            <nav class="nav-menu">
+              <ul class="nav-list">
+                <li class="item">
+                  <a class="link " href="">Студия</a>
+                </li>
+                <li class="item">
+                  <a class="link current" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="item">
+                  <a class="link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="utils-menu">
+            <ul class="utils">
+              <li class="item">
+                <a class="link" href="mailto:info@devstudio.com">
+                  <svg class="icon-mail" width="16" height="11.2">
+                    <use href="./Images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="tel:+380961111111">
+                  <svg class="icon-phone" width="10" height="15">
+                    <use href="./Images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
       </div>
-      <div class="utils-menu">
-        <ul class="utils">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon-mail" width="16" height="11.2">
-                <use href="./Images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="icon-phone" width="10" height="15">
-                <use href="./Images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-    <main>
+    </header>
+
       <!--КНОПКИ НАВИГАЦИИ ПО ПОРТФОЛИО-->
        <ul class="nav-btn">
         <li class="list">

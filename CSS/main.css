@@ -610,8 +610,19 @@ x :focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .utils-menu .utils .item .link {
+  .utils-menu {
+    margin-left: 305px;
+  }
+  .utils-menu .utils {
     display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .utils-menu .utils .item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1281,7 +1292,6 @@ x :focus {
 .projects .list {
   width: 100%;
   margin-right: 15px;
-  margin-left: 15px;
   margin-bottom: 30px;
   text-decoration: none;
 }
@@ -1343,7 +1353,6 @@ x :focus {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-left: 15px;
   width: 100%;
 }
 
