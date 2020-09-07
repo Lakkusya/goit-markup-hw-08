@@ -38,6 +38,12 @@ h6 {
   list-style: none;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -1111,6 +1117,7 @@ x :focus {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
