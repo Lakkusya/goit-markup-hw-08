@@ -103,15 +103,26 @@
             <div class="someone"> 
             <a class="link" href="">
               <div class="overlay">
-              <img class="img "
-              srcset="
-              ./Images/Foto/project1-450.jpg 1x,
-              ./Images/Foto/project1-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/First-picture.jpg"
-                alt="Дизайн Веб-сайта"
-                width="450"
-            />
+     <picture class="img">
+     <source srcset="
+ ./Images/Foto/project1-450.jpg 450w,
+  ./Images/Foto/project1-450@2x.jpg 900w
+  " media="(max-width: 767px)"
+  sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+   ./Images/Foto/project1-354.jpg 354w,
+     ./Images/Foto/project1-354@2x.jpg 708w
+     " media="(max-width: 1199px)"
+       sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+       <source srcset="
+   ./Images/Foto/project1-370.jpg 370w,
+     ./Images/Foto/project1-370@2x.jpg 740w
+   " media="(min-width: 1200px)"
+    sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+                                
+     <img src="./Images/Portfolio/First-picture.jpg" alt="Проект" />
+                                </picture>
+
               <p class="info">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -129,16 +140,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-              srcset="
-              ./Images/Foto/project2-450.jpg 1x,
-              ./Images/Foto/project2-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/Golden-Star.jpg"
-                alt=""
-                width="450"
-
-            />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project2-450.jpg 450w,
+      ./Images/Foto/project2-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project2-354.jpg 354w,
+         ./Images/Foto/project2-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project2-370.jpg 370w,
+         ./Images/Foto/project2-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/Golden-Star.jpg" alt="Проект" />
+    </picture>
             <div class="text-box">
               <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
             <p class="name">Дизайн</p>
@@ -147,16 +164,22 @@
             </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project3-450.jpg 1x,
-              ./Images/Foto/project3-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/SeaFood-Restrant.jpg"
-                alt=""
-                width="450"
-
-              />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project3-450.jpg 450w,
+      ./Images/Foto/project3-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project3-354.jpg 354w,
+         ./Images/Foto/project3-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project3-370.jpg 370w,
+         ./Images/Foto/project3-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/SeaFood-Restrant.jpg" alt="Проект" />
+    </picture>
 
             <div class="text-box">
               <h2 class="projects-title">Ресторан Seafood</h2>
@@ -166,16 +189,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-              srcset="
-              ./Images/Foto/project4-450.jpg 1x,
-              ./Images/Foto/project4-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/Ears.jpg"
-                alt=""
-                width="450"
-
-            />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project4-450.jpg 450w,
+      ./Images/Foto/project4-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project4-354.jpg 354w,
+         ./Images/Foto/project4-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project4-370.jpg 370w,
+         ./Images/Foto/project4-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/Ears.jpg" alt="Проект" />
+    </picture>
             <div class="text-box">
               <h2 class="projects-title">Проект Prime</h2>
             <p class="name">Маркетинг</p>
@@ -184,16 +213,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project5-450.jpg 1x,
-              ./Images/Foto/project5-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/Boxes.jpg"
-                alt=""
-                width="450"
-
-            />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project5-450.jpg 450w,
+      ./Images/Foto/project5-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project5-354.jpg 354w,
+         ./Images/Foto/project5-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project5-370.jpg 370w,
+         ./Images/Foto/project5-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/Boxes.jpg" alt="Проект" />
+    </picture>
             <div class="text-box">
              <h2 class="projects-title">Проект Boxes</h2>
             <p class="name">Приложение</p> 
@@ -202,16 +237,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project6-450.jpg 1x,
-              ./Images/Foto/project6-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/PC.jpg"
-                alt=""
-                width="450"
-
-              />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project6-450.jpg 450w,
+      ./Images/Foto/project6-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project6-354.jpg 354w,
+         ./Images/Foto/project6-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project6-370.jpg 370w,
+         ./Images/Foto/project6-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/PC.jpg" alt="Проект" />
+    </picture>
               <div class="text-box">
               <h2 class="projects-title">Inspiration has no Borders</h2>
             <p class="name">Веб-сайт</p>
@@ -220,16 +261,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project7-450.jpg 1x,
-              ./Images/Foto/project7-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/Magazine.jpg"
-                alt=""
-                width="450"
-
-              />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project7-450.jpg 450w,
+      ./Images/Foto/project7-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project7-354.jpg 354w,
+         ./Images/Foto/project7-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project7-370.jpg 370w,
+         ./Images/Foto/project7-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/Magazine.jpg" alt="Проект" />
+    </picture>
            
             <div class="text-box">
               <h2 class="projects-title">Издание Limited Edition</h2>
@@ -239,16 +286,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project8-450.jpg 1x,
-              ./Images/Foto/project8-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/LAB.jpg"
-                alt=""
-                width="450"
-
-              />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project8-450.jpg 450w,
+      ./Images/Foto/project8-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project8-354.jpg 354w,
+         ./Images/Foto/project8-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project8-370.jpg 370w,
+         ./Images/Foto/project8-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/LAB.jpg" alt="Проект" />
+    </picture>
          
             <div class="text-box">
               <h2 class="projects-title">Проект LAB</h2>
@@ -258,16 +311,22 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img class="img"
-                            srcset="
-              ./Images/Foto/project9-450.jpg 1x,
-              ./Images/Foto/project9-450@2x.jpg 2x
-              "
-                src="./Images/Portfolio/Growing.jpg"
-                alt=""
-                width="450"
-
-              />
+    <picture class="img">
+      <source srcset="
+     ./Images/Foto/project9-450.jpg 450w,
+      ./Images/Foto/project9-450@2x.jpg 900w
+      " media="(max-width: 767px)" sizes="(max-width: 767px) 450px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project9-354.jpg 354w,
+         ./Images/Foto/project9-354@2x.jpg 708w
+         " media="(max-width: 1199px)" sizes="(max-width: 1199px) 354px, 90vw, 100vw" />
+      <source srcset="
+       ./Images/Foto/project9-370.jpg 370w,
+         ./Images/Foto/project9-370@2x.jpg 740w
+       " media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 90vw, 100vw" />
+    
+      <img src="./Images/Portfolio/Growing.jpg" alt="Проект" />
+    </picture>
          
             <div class="text-box">
               <h2 class="projects-title">Growing Business</h2>

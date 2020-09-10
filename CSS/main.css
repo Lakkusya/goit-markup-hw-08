@@ -886,7 +886,7 @@ x :focus {
     flex-wrap: wrap;
   }
   .team .list {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
   .team .list:not(:nth-child(2n)) {
     margin-right: 30px;

@@ -31,6 +31,7 @@
 .team {
   .list {
     max-width: 450px;
+
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
@@ -63,7 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     .list {
-      width: 354px;
+      width: calc((100% - 30px) / 2);
     }
     .list:not(:nth-child(2n)) {
       margin-right: 30px;
