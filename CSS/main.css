@@ -325,7 +325,7 @@ x :focus {
 }
 
 .btn-footer {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 10px 29px;
@@ -1036,6 +1036,7 @@ x :focus {
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .join-list {
@@ -1091,6 +1092,7 @@ x :focus {
   border-radius: 4px;
   background: #2f303a;
   outline: none;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding-left: 16px;
   font-family: Roboto;
@@ -1115,11 +1117,17 @@ x :focus {
   margin-left: 10px;
 }
 
+.send-form {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .footer-form {
-  display: flex;
+  display: block;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1138,6 +1146,7 @@ x :focus {
     flex-wrap: wrap;
   }
   .send-form {
+    display: block;
     width: 100%;
   }
   .footer-form {
@@ -1150,36 +1159,6 @@ x :focus {
     width: 25%;
     padding-top: 65px;
     padding-bottom: 60px;
-  }
-  .adress,
-  .link-footer {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .link-footer {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .join {
-    text-transform: uppercase;
-    padding-top: 0px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  .utils .link {
-    margin-bottom: 9px;
-  }
-  .footer {
-    background: #2f303a;
   }
   .footer-general {
     display: flex;
@@ -1194,71 +1173,16 @@ x :focus {
     width: 25%;
     padding-top: 72px;
   }
-  .join-list {
-    display: flex;
-  }
-  .join-list-link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .join-list-item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .join-list-link:hover {
-    background-color: #2196f3;
-  }
-  .social-icon {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-  }
   .subscribe {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    color: #ffffff;
-    text-transform: uppercase;
     margin-bottom: 20px;
     margin-right: 100px;
   }
   .subscribe-mail {
     width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background: #2f303a;
-    outline: none;
     margin-right: 12px;
     padding-left: 16px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .subscribe-mail::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .send-icon {
-    fill: #ffffff;
-    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .send-form {
     display: flex;
@@ -1380,9 +1304,14 @@ x :focus {
 @media screen and (min-width: 1200px) {
   .projects .list {
     width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
   .projects .list:nth-child(3n) {
     margin-right: 0;
+  }
+  .projects .list:nth-child(2n) {
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
