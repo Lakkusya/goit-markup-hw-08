@@ -863,10 +863,6 @@ x :focus {
   background: #f5f4fa;
 }
 
-.team .list:not(:last-child) {
-  margin-right: 30px;
-}
-
 .social-logo {
   display: flex;
   justify-content: center;
@@ -909,6 +905,9 @@ x :focus {
   }
   .team-main {
     padding-bottom: 94px;
+  }
+  .team .list:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
   }
 }
 
