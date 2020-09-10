@@ -849,7 +849,7 @@ x :focus {
 }
 
 .team .list {
-  max-width: 450px;
+  width: 100%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
@@ -898,7 +898,16 @@ x :focus {
 
 @media screen and (min-width: 1200px) {
   .team .list {
-    width: 270px;
+    width: calc((100% - 30px) / 2);
+  }
+  .team .list:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+  .team .list:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0;
+  }
+  .team .list {
+    width: calc((100% - 90px) / 4);
   }
   .team .list:not(:last-child) {
     margin-right: 30px;
@@ -1129,15 +1138,9 @@ x :focus {
     flex-wrap: wrap;
   }
   .send-form {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     width: 100%;
   }
   .footer-form {
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 130px;
   }
 }
