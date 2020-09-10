@@ -259,17 +259,22 @@
           <h2 class="subtitle">Наша команда</h2>
           <ul class="team">
             <li class="list">
-              <img
-                class="team-photo img"
-                srcset="
-                ./Images/Foto/team1-450.jpg 1x,
-                ./Images/Foto/team1-450@2x.jpg 2x
-                "
-                src="./Images/Foto/img1.jpg"
-                alt="Дизанер студии"
-                width="450"
+                <picture class="img">
+                  <source srcset="
+                                      ./Images/Foto/team1-450.jpg 450w,
+                                      ./Images/Foto/team1-450@2x.jpg 900w
+                                    " media="(max-width: 767px)" sizes="(max-width: 767px) 450px 90vw, 100vw" />
+                  <source srcset="
+                                      ./Images/Foto/team1-354.jpg 374w,
+                                      ./Images/Foto/team1-354@2x.jpg 708w
+                                    " media="(max-width: 1199px)" sizes="(man-width: 1199px) 374px 90vw, 100vw" />
+                  <source srcset="
+                                      ./Images/Foto/team1-270.jpg 270w,
+                                      ./Images/Foto/team1-270@2x.jpg 540w
+                                    " media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px, 90vw, 100vw" />
                 
-              />
+                  <img src="./Images/Foto/img1.jpg" alt="Сотрудник" />
+                </picture>
               <h3 class="member">Николай Кучеренко</h3>
               <p class="position">Product Designer</p>
               <ul class="social-logo">
@@ -307,7 +312,7 @@
               <img class="team-photo img" srcset="
                               ./Images/Foto/team2-450.jpg 1x,
                               ./Images/Foto/team2-450@2x.jpg 2x
-                              " src="./Images/Foto/img2.jpg" alt="Дизанер студии" width="450" />
+                              " src="./Images/Foto/img2.jpg" alt="Дизанер студии" />
               <h3 class="member">Ольга Иванова</h3>
               <p class="position">Frontend Developer</p>
               <ul class="social-logo">
@@ -345,7 +350,7 @@
               <img class="team-photo img" srcset="
                               ./Images/Foto/team3-450.jpg 1x,
                               ./Images/Foto/team3-450@2x.jpg 2x
-                              " src="./Images/Foto/img3.jpg" alt="Дизанер студии" width="450" />
+                              " src="./Images/Foto/img3.jpg" alt="Дизанер студии" />
               <h3 class="member">Андрей Шевченко</h3>
               <p class="position">Marketing</p>
               <ul class="social-logo">
@@ -383,7 +388,7 @@
               <img class="team-photo img" srcset="
                               ./Images/Foto/team4-450.jpg 1x,
                               ./Images/Foto/team4-450@2x.jpg 2x
-                              " src="./Images/Foto/img4.jpg" alt="Дизанер студии" width="450" />
+                              " src="./Images/Foto/img4.jpg" alt="Дизанер студии"  />
               <h3 class="member">Иван Николаев</h3>
               <p class="position">UI Designer</p>
               <ul class="social-logo">
