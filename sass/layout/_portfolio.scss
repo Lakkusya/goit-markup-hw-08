@@ -98,13 +98,16 @@
 @media screen and (min-width: 1200px) {
   .projects .list {
     width: calc((100% - 60px) / 3);
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .projects .list:not(:nth-child(3n)) {
     margin-right: 30px;
+  }
+  .projects .list:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
   }
-  .projects .list:nth-child(3n) {
-    margin-right: 0;
-  }
-  .projects .list:nth-child(2n) {
-    margin-right: 30px;
+  .general {
+    padding-bottom: 94px;
   }
 }

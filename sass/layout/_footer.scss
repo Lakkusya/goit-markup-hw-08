@@ -81,6 +81,7 @@
   fill: #ffffff;
 }
 .subscribe {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -91,6 +92,7 @@
   margin-bottom: 20px;
 }
 .subscribe-mail {
+  display: block;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -99,7 +101,6 @@
   outline: none;
   margin-top: 20px;
   margin-bottom: 20px;
-
   padding-left: 16px;
   font-family: Roboto;
   font-style: normal;
@@ -122,84 +123,65 @@
   margin-left: 10px;
 }
 .send-form {
-  display: block;
+  justify-content: center;
+  align-content: center;
   box-sizing: border-box;
   text-align: center;
+  margin: 0 auto;
 }
 .footer-form {
-  display: block;
-  box-sizing: border-box;
   justify-content: center;
-  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
+  .footer-nav-join {
+    display: flex;
+    padding-top: 65px;
+  }
   .footer-nav {
     width: 50%;
-    padding-top: 60px;
+    padding-top: 0;
   }
   .footer-join {
     width: 50%;
-    padding-top: 65px;
-  }
-  .footer-general {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .send-form {
-    display: block;
-    width: 100%;
-  }
-  .footer-form {
-    padding-bottom: 130px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-nav-join {
+    display: flex;
+  }
   .footer-nav {
-    width: 25%;
-    padding-top: 65px;
-    padding-bottom: 60px;
+    width: 300px;
   }
 
   .footer-general {
     display: flex;
-    align-content: center;
-  }
-  .footer-nav {
-    width: 25%;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .footer-join {
-    width: 25%;
-    padding-top: 72px;
+    width: 300px;
   }
 
   .subscribe {
     margin-bottom: 20px;
-    margin-right: 100px;
   }
   .subscribe-mail {
     width: 358px;
-
     margin-right: 12px;
     padding-left: 16px;
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .send-form {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 50%;
+    width: 600px;
+    text-align: flex-start;
   }
+
   .footer-form {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 72px;
-    padding-bottom: 94px;
   }
 }
